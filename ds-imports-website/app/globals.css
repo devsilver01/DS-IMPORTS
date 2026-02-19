@@ -1,0 +1,111 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #0D0D0D;
+  --foreground: #F5F5F5;
+  --card: #1C1C1C;
+  --card-foreground: #F5F5F5;
+  --popover: #1C1C1C;
+  --popover-foreground: #F5F5F5;
+  --primary: #00CFFF;
+  --primary-foreground: #0D0D0D;
+  --secondary: #1C1C1C;
+  --secondary-foreground: #F5F5F5;
+  --muted: #2A2A2A;
+  --muted-foreground: #A0A0A0;
+  --accent: #00CFFF;
+  --accent-foreground: #0D0D0D;
+  --destructive: #ef4444;
+  --destructive-foreground: #F5F5F5;
+  --border: #2A2A2A;
+  --input: #2A2A2A;
+  --ring: #00CFFF;
+  --chart-1: #00CFFF;
+  --chart-2: #00A3CC;
+  --chart-3: #007A99;
+  --chart-4: #005266;
+  --chart-5: #003344;
+  --radius: 0.75rem;
+  --neon: #00CFFF;
+  --neon-glow: 0 0 15px rgba(0, 207, 255, 0.5), 0 0 30px rgba(0, 207, 255, 0.2);
+  --neon-glow-strong: 0 0 20px rgba(0, 207, 255, 0.6), 0 0 40px rgba(0, 207, 255, 0.3), 0 0 60px rgba(0, 207, 255, 0.1);
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-neon: var(--neon);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Neon glow utility */
+.neon-border {
+  box-shadow: var(--neon-glow);
+  border-color: var(--neon);
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(0, 207, 255, 0.5), 0 0 20px rgba(0, 207, 255, 0.3);
+}
+
+.neon-glow-strong {
+  box-shadow: var(--neon-glow-strong);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0D0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00CFFF;
+}

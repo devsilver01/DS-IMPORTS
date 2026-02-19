@@ -1,0 +1,77 @@
+import type { Product } from "./cart-context"
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Capinha Premium iPhone 15",
+    description: "Capinha de silicone premium com protecao anti-impacto e acabamento fosco.",
+    price: 49.90,
+    image: "/images/products/case.jpg",
+    category: "Capinhas",
+  },
+  {
+    id: 2,
+    name: "Cabo USB-C 2m Turbo",
+    description: "Cabo USB-C trancado em nylon com carregamento rapido 60W.",
+    price: 34.90,
+    image: "https://via.placeholder.com/300?text=Teste+Imagem",
+    category: "Cabos",
+  },
+  {
+    id: 3,
+    name: "Carregador Turbo 20W",
+    description: "Carregador rapido USB-C 20W compativel com iPhone.",
+    price: 59.90,
+    image: "images/products/cable.png",
+    category: "Carregadores",
+  },
+  {
+    id: 4,
+    name: "Fone Bluetooth Pro",
+    description: "Fone de ouvido Bluetooth 5.3 com cancelamento de ruido e 30h de bateria.",
+    price: 129.90,
+    image: "/images/products/earbuds.jpg",
+    category: "Fones",
+  },
+  {
+    id: 5,
+    name: "Pelicula 9D Privacidade",
+    description: "Pelicula de vidro temperado 9D com protecao de privacidade anti-espiao.",
+    price: 24.90,
+    image: "/images/products/screen-protector.jpg",
+    category: "Peliculas",
+  },
+  {
+    id: 6,
+    name: "Suporte Veicular Magnetico",
+    description: "Suporte magnetico premium para carro com rotacao 360 graus.",
+    price: 44.90,
+    image: "/images/products/car-mount.jpg",
+    category: "Acessorios",
+  },
+  {
+    id: 7,
+    name: "Power Bank 10000mAh",
+    description: "Bateria portatil slim com 2 saidas USB e carregamento rapido.",
+    price: 89.90,
+    image: "/images/products/powerbank.jpg",
+    category: "Carregadores",
+  },
+  {
+    id: 8,
+    name: "Capinha Transparente Galaxy S24",
+    description: "Capinha transparente ultra fina com bordas reforçadas anti-amarelamento.",
+    price: 39.90,
+    image: "/images/products/case-clear.jpg",
+    category: "Capinhas",
+  },
+
+    {
+    id: 9,
+    name: "Fones Versao iPods Nacional",
+    description: "Capinha transparente ultra fina com bordas reforçadas anti-amarelamento.",
+    price: 39.90,
+    image: "/images/products/fone.png",
+    category: "Fones",
+  },
+]
