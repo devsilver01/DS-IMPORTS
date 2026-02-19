@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export', // Adicione esta linha para gerar arquivos estáticos
   typescript: {
     ignoreBuildErrors: true,
   },
